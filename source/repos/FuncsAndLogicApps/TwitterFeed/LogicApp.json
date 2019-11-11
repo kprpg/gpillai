@@ -91,7 +91,7 @@
                 "body": {
                   "To": "gpillai@microsoft.com",
                   "Subject": "Twitter post from RajKutts",
-                  "Body": "<p>@{triggerBody()?['TweetText']}</p>"
+                  "Body": "<p>Tweet: @{triggerBody()?['TweetText']}<br>\nReTweets: @{triggerBody()?['RetweetCount']}<br>\nFavoritesCount: @{triggerBody()?['UserDetails']?['FavouritesCount']}<br>\n</p>"
                 },
                 "path": "/v2/Mail"
               },
@@ -132,23 +132,23 @@
         "parameters": {
           "$connections": {
             "value": {
-              "twitter_1": {
-                "id": "[concat(subscription().id, '/providers/Microsoft.Web/locations/', parameters('logicAppLocation'), '/managedApis/', 'twitter')]",
-                "connectionId": "[resourceId('Microsoft.Web/connections', parameters('twitter_1_Connection_Name'))]",
-                "connectionName": "[parameters('twitter_1_Connection_Name')]"
-              },
               "office365": {
                 "id": "[concat(subscription().id, '/providers/Microsoft.Web/locations/', parameters('logicAppLocation'), '/managedApis/', 'office365')]",
                 "connectionId": "[resourceId('Microsoft.Web/connections', parameters('office365_1_Connection_Name'))]",
                 "connectionName": "[parameters('office365_1_Connection_Name')]"
+              },
+              "twitter_1": {
+                "id": "[concat(subscription().id, '/providers/Microsoft.Web/locations/', parameters('logicAppLocation'), '/managedApis/', 'twitter')]",
+                "connectionId": "[resourceId('Microsoft.Web/connections', parameters('twitter_1_Connection_Name'))]",
+                "connectionName": "[parameters('twitter_1_Connection_Name')]"
               }
             }
           }
         }
       },
       "dependsOn": [
-        "[resourceId('Microsoft.Web/connections', parameters('twitter_1_Connection_Name'))]",
-        "[resourceId('Microsoft.Web/connections', parameters('office365_1_Connection_Name'))]"
+        "[resourceId('Microsoft.Web/connections', parameters('office365_1_Connection_Name'))]",
+        "[resourceId('Microsoft.Web/connections', parameters('twitter_1_Connection_Name'))]"
       ]
     },
     {
