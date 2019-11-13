@@ -1,0 +1,111 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29123.88
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.AppBldgInAzure-Functions", "1.AppBldgInAzure-Functions", "{C4D41E6E-594B-4493-ABB9-6BCD22BF5E1F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.AppBldgInAzure-Containers", "2.AppBldgInAzure-Containers", "{65738B1D-24E2-4EEF-8107-9A2C0FC8B9DF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FunctionApp-CS-HttpTrigger", "FunctionApp-CS-HttpTrigger\FunctionApp-CS-HttpTrigger.csproj", "{D6C1D497-4D1E-48D0-BFBE-621704BEA09D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FunctionApp-CS-CosmosDBTrigger", "FunctionApp-CS-CosmosDBTrigger\FunctionApp-CS-CosmosDBTrigger.csproj", "{44584B27-AF3D-4F33-B4D8-06E5F1E24D5B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OrchestrationFuncs", "OrchestrationFuncs", "{89E7FF74-D5B6-431E-B68E-B5DE8D5149DA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FunctionApp-CS-Orchestrator", "FunctionApp-CS-Orchestrator\FunctionApp-CS-Orchestrator.csproj", "{37EAFA92-721E-4FDC-A641-68BE8415E4EB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CSharp-Functions", "CSharp-Functions", "{604511D5-2F16-464C-976E-5BF9FDDF735A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FunctionAppCS-StorageQTrigger", "FunctionAppCS-StorageQTrigger\FunctionAppCS-StorageQTrigger.csproj", "{CD9A7EF3-E2F0-48E0-9A21-9765ECBD31C3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FunctionApp-CS-EventHubTrigger", "FunctionApp-CS-EventHubTrigger\FunctionApp-CS-EventHubTrigger.csproj", "{D62FA853-5EAC-4439-88DD-3BC8371858ED}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FunctionApp-CS-TimerTrigger", "FunctionApp-CS-TimerTrigger\FunctionApp-CS-TimerTrigger.csproj", "{5D793191-0B15-4343-A0AC-935CF44E0D38}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HP-FunctionApp-CS-HttpTrigger", "HP-FunctionApp-CS-HttpTrigger\HP-FunctionApp-CS-HttpTrigger.csproj", "{D0537E34-6AC5-4E29-B6A4-CA7AFDE2A0D0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EventHubTrigger", "EventHubTrigger", "{EAD6AAA5-E86D-475F-AC08-F615225FE236}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FunctionApp-CS-EventHubTriggerDemo", "..\FunctionApp-CS-EventHubTriggerDemo\FunctionApp-CS-EventHubTriggerDemo\FunctionApp-CS-EventHubTriggerDemo.csproj", "{BD8EF085-DC06-42A9-A09C-6AD425014077}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleSender", "..\azure-event-hubs\samples\DotNet\Microsoft.Azure.EventHubs\SampleSender\SampleSender.csproj", "{9355259D-2576-4A11-933B-3ED650508C2A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DurableFuncs-CS-FuncChaining", "DurableFuncs-CS-FuncChaining\DurableFuncs-CS-FuncChaining.csproj", "{AA795B34-5D3D-48D6-BEF7-643687601ACE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DurableFunc-FanIn-FanOut", "DurableFunc-FanIn-FanOut\DurableFunc-FanIn-FanOut.csproj", "{8705933A-C507-443C-BB24-DAB83A571880}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D6C1D497-4D1E-48D0-BFBE-621704BEA09D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6C1D497-4D1E-48D0-BFBE-621704BEA09D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6C1D497-4D1E-48D0-BFBE-621704BEA09D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6C1D497-4D1E-48D0-BFBE-621704BEA09D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44584B27-AF3D-4F33-B4D8-06E5F1E24D5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44584B27-AF3D-4F33-B4D8-06E5F1E24D5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44584B27-AF3D-4F33-B4D8-06E5F1E24D5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44584B27-AF3D-4F33-B4D8-06E5F1E24D5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37EAFA92-721E-4FDC-A641-68BE8415E4EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37EAFA92-721E-4FDC-A641-68BE8415E4EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37EAFA92-721E-4FDC-A641-68BE8415E4EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37EAFA92-721E-4FDC-A641-68BE8415E4EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD9A7EF3-E2F0-48E0-9A21-9765ECBD31C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD9A7EF3-E2F0-48E0-9A21-9765ECBD31C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD9A7EF3-E2F0-48E0-9A21-9765ECBD31C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD9A7EF3-E2F0-48E0-9A21-9765ECBD31C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D62FA853-5EAC-4439-88DD-3BC8371858ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D62FA853-5EAC-4439-88DD-3BC8371858ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D62FA853-5EAC-4439-88DD-3BC8371858ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D62FA853-5EAC-4439-88DD-3BC8371858ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D793191-0B15-4343-A0AC-935CF44E0D38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D793191-0B15-4343-A0AC-935CF44E0D38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D793191-0B15-4343-A0AC-935CF44E0D38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D793191-0B15-4343-A0AC-935CF44E0D38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0537E34-6AC5-4E29-B6A4-CA7AFDE2A0D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0537E34-6AC5-4E29-B6A4-CA7AFDE2A0D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0537E34-6AC5-4E29-B6A4-CA7AFDE2A0D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0537E34-6AC5-4E29-B6A4-CA7AFDE2A0D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD8EF085-DC06-42A9-A09C-6AD425014077}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD8EF085-DC06-42A9-A09C-6AD425014077}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD8EF085-DC06-42A9-A09C-6AD425014077}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD8EF085-DC06-42A9-A09C-6AD425014077}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9355259D-2576-4A11-933B-3ED650508C2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9355259D-2576-4A11-933B-3ED650508C2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9355259D-2576-4A11-933B-3ED650508C2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9355259D-2576-4A11-933B-3ED650508C2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA795B34-5D3D-48D6-BEF7-643687601ACE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA795B34-5D3D-48D6-BEF7-643687601ACE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA795B34-5D3D-48D6-BEF7-643687601ACE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA795B34-5D3D-48D6-BEF7-643687601ACE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8705933A-C507-443C-BB24-DAB83A571880}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8705933A-C507-443C-BB24-DAB83A571880}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8705933A-C507-443C-BB24-DAB83A571880}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8705933A-C507-443C-BB24-DAB83A571880}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D6C1D497-4D1E-48D0-BFBE-621704BEA09D} = {604511D5-2F16-464C-976E-5BF9FDDF735A}
+		{44584B27-AF3D-4F33-B4D8-06E5F1E24D5B} = {604511D5-2F16-464C-976E-5BF9FDDF735A}
+		{89E7FF74-D5B6-431E-B68E-B5DE8D5149DA} = {C4D41E6E-594B-4493-ABB9-6BCD22BF5E1F}
+		{37EAFA92-721E-4FDC-A641-68BE8415E4EB} = {89E7FF74-D5B6-431E-B68E-B5DE8D5149DA}
+		{604511D5-2F16-464C-976E-5BF9FDDF735A} = {C4D41E6E-594B-4493-ABB9-6BCD22BF5E1F}
+		{CD9A7EF3-E2F0-48E0-9A21-9765ECBD31C3} = {604511D5-2F16-464C-976E-5BF9FDDF735A}
+		{D62FA853-5EAC-4439-88DD-3BC8371858ED} = {604511D5-2F16-464C-976E-5BF9FDDF735A}
+		{5D793191-0B15-4343-A0AC-935CF44E0D38} = {604511D5-2F16-464C-976E-5BF9FDDF735A}
+		{D0537E34-6AC5-4E29-B6A4-CA7AFDE2A0D0} = {604511D5-2F16-464C-976E-5BF9FDDF735A}
+		{EAD6AAA5-E86D-475F-AC08-F615225FE236} = {604511D5-2F16-464C-976E-5BF9FDDF735A}
+		{BD8EF085-DC06-42A9-A09C-6AD425014077} = {EAD6AAA5-E86D-475F-AC08-F615225FE236}
+		{9355259D-2576-4A11-933B-3ED650508C2A} = {EAD6AAA5-E86D-475F-AC08-F615225FE236}
+		{AA795B34-5D3D-48D6-BEF7-643687601ACE} = {89E7FF74-D5B6-431E-B68E-B5DE8D5149DA}
+		{8705933A-C507-443C-BB24-DAB83A571880} = {89E7FF74-D5B6-431E-B68E-B5DE8D5149DA}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E7C126CE-A2A8-45C8-9169-1D700EB7E81E}
+	EndGlobalSection
+EndGlobal
